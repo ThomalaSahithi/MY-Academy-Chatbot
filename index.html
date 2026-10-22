@@ -1228,12 +1228,12 @@
       Replace the placeholder below with your n8n Production Chat URL.
       Do not put API keys, passwords, or private credentials here.
     */
-    const N8N_CHAT_URL = 'PASTE_YOUR_PRODUCTION_CHAT_URL_HERE';
+    const N8N_CHAT_URL = 'https://sahithi1632.app.n8n.cloud/webhook/5625667c-eca7-45ec-9fb5-385eaa07d6b9/chat';
 
     let chatReady = false;
 
     function openChat() {
-      if (N8N_CHAT_URL === 'PASTE_YOUR_PRODUCTION_CHAT_URL_HERE') {
+      if (N8N_CHAT_URL === 'https://sahithi1632.app.n8n.cloud/webhook/5625667c-eca7-45ec-9fb5-385eaa07d6b9/chat') {
         alert(
           'The AI chatbot is not connected yet. Add your n8n Production Chat URL to index.html first.'
         );
@@ -1242,7 +1242,7 @@
 
       if (!chatReady) {
         createChat({
-          webhookUrl: https://sahithi1632.app.n8n.cloud/webhook/5625667c-eca7-45ec-9fb5-385eaa07d6b9/chat,
+          webhookUrl: N8N_CHAT_URL,
           target: '#n8n-chat',
           mode: 'window',
           showWelcomeScreen: false,
